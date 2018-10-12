@@ -23,7 +23,7 @@ choco install git git-lfs -y
 choco install vscode visualstudio2017professional -y
  
 :: Container tools
-choco install docker docker-compose kubernetes-cli -y
+choco install docker-for-windows docker docker-compose kubernetes-cli -y
  
 :: DB tools
 choco install sql-server-management-studio heidisql -y
