@@ -16,6 +16,10 @@ choco install nodejs dotnet4.7.1 dotnetcore-sdk dotnetcore-windowshosting reshar
 :: Some important languages
 choco install typescript -y
  
+ ::Gitlab testing
+ choco install gitlab-runner
+ 
+ ::kuBERNE
 :: Version control
 choco install git git-lfs -y
  
@@ -35,4 +39,14 @@ choco install consul -y
 choco install selenium-chrome-driver -y
 
 :: Optional tools
-::choco install dotnet4.5.2 dotnet4.6.2 python golang minikube phantomjs
+::choco install dotnet4.5.2 dotnet4.6.2 python   
+
+::VS code Plugins
+code GitHub.vscode-pull-request-github
+code jmrog.vscode-nuget-package-manager
+code ms-vscode.azure-account
+code ms-vscode.csharp
+code ms-vsliveshare.vsliveshare
+code PeterJausovec.vscode-docker
+code redhat.java
+code ritwickdey.LiveServer
