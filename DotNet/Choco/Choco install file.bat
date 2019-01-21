@@ -26,6 +26,9 @@ choco install git git-lfs -y
 :: IDEs
 choco install vscode visualstudio2017professional -y
  
+ :: Service Fabric SDK
+ choco install service-fabric-sdk
+ 
 :: Container tools
 choco install docker-for-windows docker docker-compose kubernetes-cli -y
  
