@@ -23,11 +23,15 @@ choco install vscode visualstudio2017enterprise -y
  :: Service Fabric SDK
  choco install service-fabric-sdk
  
+:: VS 2017  addons
+choco install ssdt17 -y
+ 
 :: Container tools
 choco install docker-for-windows docker docker-compose kubernetes-cli -y
  
 :: DB tools
 choco install sql-server-management-studio heidisql -y
+
  
 :: Testing
 choco install selenium-chrome-driver -y
