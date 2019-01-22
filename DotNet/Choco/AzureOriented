@@ -40,11 +40,10 @@ choco install selenium-chrome-driver -y
 
 
 ::VS code Plugins
-code GitHub.vscode-pull-request-github
-code jmrog.vscode-nuget-package-manager
-code ms-vscode.azure-account
-code ms-vscode.csharp
-code ms-vsliveshare.vsliveshare
-code PeterJausovec.vscode-docker
-code redhat.java
-code ritwickdey.LiveServer
+code --install-extension GitHub.vscode-pull-request-github
+code --install-extension jmrog.vscode-nuget-package-manager
+code --install-extension ms-vscode.azure-account
+code --install-extension ms-vscode.csharp
+code --install-extension  ms-vsliveshare.vsliveshare
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension ritwickdey.LiveServer
