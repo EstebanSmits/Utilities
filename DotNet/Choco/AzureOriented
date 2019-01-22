@@ -32,6 +32,8 @@ choco install docker-for-windows docker docker-compose kubernetes-cli -y
 :: DB tools
 choco install sql-server-management-studio heidisql -y
 
+ :: Communication Tools
+ choco install slack microsoft-teams -y
  
 :: Testing
 choco install selenium-chrome-driver -y
