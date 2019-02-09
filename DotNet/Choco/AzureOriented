@@ -5,14 +5,14 @@
 choco install chocolateygui -y
  
 :: Utilities
-choco install putty openssh winscp curl wireshark fiddler winmerge slack beyondcompare virtualclonedrive webpi notepadplusplus postman -y
+choco install putty openssh winscp  wireshark fiddler winmerge slack beyondcompare  webpi notepadplusplus postman -y
  
 :: CLIs
 choco install azure-cli nuget.commandlineterraform -y
  
 :: Important frameworks
 choco install IIS-WebServerRole --source windowsfeatures  
-choco install nodejs dotnet4.7.1 dotnetcore-sdk dotnetcore-windowshosting resharper -y
+choco install nodejs dotnet4.7.1  dotnet4.6.2 dotnetcore-sdk dotnetcore-windowshosting resharper -y
  
 :: Some important languages
 choco install typescript -y
