@@ -1,8 +1,7 @@
 :: install CHoco with powershell
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
- 
-:: Chocolatey GUI
-choco install chocolateygui -y
+
+:: install gmaster seq by hand
  
 :: Utilities
 choco install putty openssh winscp  wireshark fiddler winmerge slack beyondcompare  webpi notepadplusplus postman -y
@@ -12,13 +11,16 @@ choco install azure-cli nuget.commandlineterraform -y
  
 :: Important frameworks
 choco install IIS-WebServerRole --source windowsfeatures  
-choco install nodejs dotnet4.7.1  dotnet4.6.2 dotnetcore-sdk dotnetcore-windowshosting resharper -y
+choco install nodejs dotnet4.7.2  dotnet4.6.2 dotnetcore-sdk dotnetcore-windowshosting resharper -y
+
+::Azure tooling
+ choco install servicebusexplorer azure-data-studio microsoftazurestorageexplorer -y
  
 :: Some important languages
 choco install typescript -y
 
 :: IDEs
-choco install vscode visualstudio2017enterprise -y
+choco install vscode visualstudio2019enterprise -y
  
  :: Service Fabric SDK
  choco install service-fabric-sdk
@@ -40,10 +42,34 @@ choco install selenium-chrome-driver -y
 
 
 ::VS code Plugins
+code --install-extension cc-arekzc.cc-nodejs
+code --install-extension christian-kohler.path-intellisense
+code --install-extension chrmarti.regex
+code --install-extension csholmq.excel-to-markdown-table
+code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension EditorConfig.EditorConfig
+code --install-extension eg2.tslint
+code --install-extension formulahendry.auto-close-tag
 code --install-extension GitHub.vscode-pull-request-github
+code --install-extension glen-84.sass-lint
+code --install-extension haaaad.ansible
+code --install-extension henriiik.docker-linter
+code --install-extension HookyQR.beautify
+code --install-extension jakob101.RelativePath
 code --install-extension jmrog.vscode-nuget-package-manager
+code --install-extension kisstkondoros.vscode-codemetrics
+code --install-extension michelemelluso.gitignore
+code --install-extension mrmlnc.vscode-less
+code --install-extension mrmlnc.vscode-scss
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-azuretools.vscode-service-fabric-reliable-services
 code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.csharp
-code --install-extension  ms-vsliveshare.vsliveshare
-code --install-extension PeterJausovec.vscode-docker
+code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ritwickdey.LiveServer
+code --install-extension shardulm94.trailing-spaces
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension Summer.azure-event-hub-explorer
+code --install-extension timonwong.ansible-autocomplete
+code --install-extension while.prettify
