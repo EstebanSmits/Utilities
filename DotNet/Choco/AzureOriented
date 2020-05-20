@@ -1,17 +1,15 @@
 :: install CHoco with powershell
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-
-:: install gmaster seq by hand
  
 :: Utilities
-choco install putty openssh winscp  wireshark fiddler winmerge slack beyondcompare  webpi notepadplusplus postman -y
+choco install putty openssh winscp  wireshark fiddler winmerge notepadplusplus postman -y
  
 :: CLIs
 choco install azure-cli nuget.commandlineterraform -y
  
 :: Important frameworks
 choco install IIS-WebServerRole --source windowsfeatures  
-choco install nodejs dotnet4.7.2  dotnet4.6.2 dotnetcore-sdk dotnetcore-windowshosting resharper -y
+choco install nodejs dotnet4.7.2  dotnetcore-sdk dotnetcore-windowshosting  -y
 
 ::Azure tooling
  choco install servicebusexplorer azure-data-studio microsoftazurestorageexplorer -y
@@ -20,11 +18,8 @@ choco install nodejs dotnet4.7.2  dotnet4.6.2 dotnetcore-sdk dotnetcore-windowsh
 choco install typescript -y
 
 :: IDEs
-choco install vscode visualstudio2019enterprise -y
- 
- :: Service Fabric SDK
- choco install service-fabric-sdk
- 
+choco install vscode visualstudio2019professional -y
+  
 :: VS 2017  addons
 choco install ssdt17 -y
  
@@ -32,11 +27,11 @@ choco install ssdt17 -y
 choco install docker-for-windows docker docker-compose kubernetes-cli -y
  
 :: DB tools
-choco install sql-server-management-studio heidisql -y
+choco install sql-server-management-studio -y
 
  :: Communication Tools
- choco install slack microsoft-teams -y
- 
+ choco install microsoft-teams -y
+
 :: Testing
 choco install selenium-chrome-driver -y
 
@@ -63,7 +58,6 @@ code --install-extension michelemelluso.gitignore
 code --install-extension mrmlnc.vscode-less
 code --install-extension mrmlnc.vscode-scss
 code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-azuretools.vscode-service-fabric-reliable-services
 code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.csharp
 code --install-extension ms-vsliveshare.vsliveshare
